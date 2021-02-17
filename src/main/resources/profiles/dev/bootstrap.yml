@@ -24,6 +24,11 @@ spring:
         namespace: ${start.nacos.namespace}
         group: ${start.nacos.group}
         file-extension: yml
+        refresh: true
+        shared-configs[0]:
+          data-id: redis.yml
+          group: xdx-note-framework
+          refresh: true
 #-----------------------------------DAO层-mybatis-2/2[开始]-----------------------------------------------
 mybatis:
   mapper-locations: classpath:mapper/*.xml
