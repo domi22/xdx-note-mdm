@@ -19,6 +19,7 @@
         <mysql.connector>5.1.47</mysql.connector>
         <alibaba.druid>1.1.16</alibaba.druid>
         <xdx.framework>1.0.0</xdx.framework>
+        <lombok>1.16.6</lombok>
     </properties>
 
     <dependencies>
@@ -72,6 +73,12 @@
             <version>${mysql.connector}</version>
         </dependency>
 
+        <!--三方工具-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok}</version>
+        </dependency>
 
     </dependencies>
 
